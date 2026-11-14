@@ -1,0 +1,8 @@
+{
+  "name": "BASELINE",
+  "description": "Apartment condition evidence instrument for timestamped move-in/move-out walkthrough inspection, comparison, claim-to-evidence matching, and PDF reporting.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

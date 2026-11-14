@@ -1,0 +1,225 @@
+---
+name: Editorial Evidence Instrument
+colors:
+  surface: '#FFFFFF'
+  surface-dim: '#dbdad6'
+  surface-bright: '#faf9f5'
+  surface-container-lowest: '#ffffff'
+  surface-container-low: '#f4f4f0'
+  surface-container: '#efeeea'
+  surface-container-high: '#e9e8e4'
+  surface-container-highest: '#e3e2df'
+  on-surface: '#1b1c1a'
+  on-surface-variant: '#454843'
+  inverse-surface: '#2f312e'
+  inverse-on-surface: '#f2f1ed'
+  outline: '#757873'
+  outline-variant: '#c5c7c1'
+  surface-tint: '#5e5e5c'
+  primary: '#090a08'
+  on-primary: '#ffffff'
+  primary-container: '#20211f'
+  on-primary-container: '#888885'
+  inverse-primary: '#c7c6c3'
+  secondary: '#5e5f5b'
+  on-secondary: '#ffffff'
+  secondary-container: '#e3e3dd'
+  on-secondary-container: '#646561'
+  tertiary: '#080906'
+  on-tertiary: '#ffffff'
+  tertiary-container: '#1f211d'
+  on-tertiary-container: '#878882'
+  error: '#ba1a1a'
+  on-error: '#ffffff'
+  error-container: '#ffdad6'
+  on-error-container: '#93000a'
+  primary-fixed: '#e4e2df'
+  primary-fixed-dim: '#c7c6c3'
+  on-primary-fixed: '#1b1c1a'
+  on-primary-fixed-variant: '#464745'
+  secondary-fixed: '#e3e3dd'
+  secondary-fixed-dim: '#c7c7c2'
+  on-secondary-fixed: '#1a1c19'
+  on-secondary-fixed-variant: '#464743'
+  tertiary-fixed: '#e3e3dc'
+  tertiary-fixed-dim: '#c6c7c0'
+  on-tertiary-fixed: '#1a1c18'
+  on-tertiary-fixed-variant: '#464742'
+  background: '#faf9f5'
+  on-background: '#1b1c1a'
+  surface-variant: '#e3e2df'
+  canvas: '#F8F7F3'
+  surface-muted: '#F0EEE9'
+  border: '#DFDED8'
+  border-strong: '#C5C4BD'
+  issue: '#C9473D'
+  issue-bg: '#FBEDEB'
+  confirmed: '#4C735B'
+  confirmed-bg: '#EAF1EB'
+  warning: '#946B28'
+  warning-bg: '#F7F1E3'
+  focus: '#355E87'
+typography:
+  display:
+    fontFamily: Newsreader
+    fontSize: 64px
+    fontWeight: '400'
+    lineHeight: 72px
+    letterSpacing: -0.02em
+  display-mobile:
+    fontFamily: Newsreader
+    fontSize: 40px
+    fontWeight: '400'
+    lineHeight: 48px
+    letterSpacing: -0.015em
+  headline-lg:
+    fontFamily: Newsreader
+    fontSize: 36px
+    fontWeight: '400'
+    lineHeight: 44px
+    letterSpacing: -0.01em
+  headline-lg-mobile:
+    fontFamily: Newsreader
+    fontSize: 28px
+    fontWeight: '400'
+    lineHeight: 36px
+    letterSpacing: -0.01em
+  headline-md:
+    fontFamily: Newsreader
+    fontSize: 22px
+    fontWeight: '500'
+    lineHeight: 28px
+  title-sm:
+    fontFamily: Inter
+    fontSize: 16px
+    fontWeight: '600'
+    lineHeight: 24px
+  body-lg:
+    fontFamily: Inter
+    fontSize: 16px
+    fontWeight: '400'
+    lineHeight: 26px
+  body-md:
+    fontFamily: Inter
+    fontSize: 14px
+    fontWeight: '400'
+    lineHeight: 22px
+  label-md:
+    fontFamily: Inter
+    fontSize: 13px
+    fontWeight: '500'
+    lineHeight: 18px
+  label-sm:
+    fontFamily: Inter
+    fontSize: 11px
+    fontWeight: '600'
+    lineHeight: 16px
+    letterSpacing: 0.06em
+  code-sm:
+    fontFamily: Courier Prime
+    fontSize: 12px
+    fontWeight: '400'
+    lineHeight: 16px
+rounded:
+  sm: 0.25rem
+  DEFAULT: 0.5rem
+  md: 0.75rem
+  lg: 1rem
+  xl: 1.5rem
+  full: 9999px
+spacing:
+  gutter: 2rem
+  gutter-mobile: 1rem
+  margin: 2.5rem
+  margin-mobile: 1.25rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 1rem
+  space-lg: 1.5rem
+  space-xl: 2.5rem
+---
+
+# BASELINE — Product Design Specification
+
+**Version:** 1.0  
+**Product:** BASELINE  
+**Platform:** Responsive web application (desktop + mobile)  
+**Tagline:** *Your apartment. Your evidence.*  
+**Purpose:** Authoritative design reference for Google Stitch, AI Studio, and frontend implementation.
+
+---
+
+## 1. Product vision
+
+BASELINE helps renters document a property's visible condition before moving in, review timestamped evidence extracted from a walkthrough video, compare that evidence with footage at move-out, and prepare evidence-based responses to disputed deposit deductions.
+
+**Positioning:** A calm, consumer-first evidence instrument, not a landlord property-management dashboard, generic AI assistant, legal-tech portal, or analytics product.
+
+**Core promise:** Make footage easier to inspect and organize. Do **not** imply that the model can establish liability, prove authenticity, guarantee a refund, or identify everything that exists outside the footage.
+
+**The defining experience:** A renter selects a proposed deduction, immediately sees relevant move-in and move-out video frames and timestamps, and can review a carefully qualified evidence assessment. This is **Claim-to-Evidence Matching**.
+
+### Principles
+
+1. **Evidence first.** Footage, source timestamps, and user-reviewed observations are always more prominent than AI-generated language.
+2. **Clarity over decoration.** Every element should help a renter record, review, compare, or export evidence.
+3. **Human verification.** Findings are reviewable; uncertain outputs remain uncertain.
+4. **Privacy by default.** Recordings and reports are private until intentionally shared.
+5. **Effortless capture, precise review.** Mobile prioritizes camera capture; desktop prioritizes detailed inspection.
+6. **Trustworthy statements.** Distinguish AI suggestions from user-confirmed observations and document-backed evidence.
+
+---
+
+## 2. Brand and visual identity
+
+### Brand language
+
+- **Wordmark:** `BASELINE`, tracked uppercase, charcoal. Do not include a generic sparkle or robot icon.
+- **Voice:** Direct, composed, specific, reassuring without exaggeration.
+- **Visual metaphor:** Editorial records, film inspection timelines, architectural plans, and modern evidence documentation.
+- **Primary surfaces:** Warm paper white, soft ivory, subtle stone. Avoid sterile pure-white everywhere.
+- **Accent:** Vermilion red exclusively for findings, attention, and selected evidence markers. Muted green for user-confirmed pre-existing conditions; neither color replaces words.
+
+### Color tokens
+
+| Token | Hex | Usage |
+|---|---|---|
+| `--canvas` | `#F8F7F3` | Primary page background |
+| `--surface` | `#FFFFFF` | Panels, document sheets, controls |
+| `--surface-muted` | `#F0EEE9` | Secondary backgrounds, thumbnails |
+| `--ink` | `#20211F` | Main text and primary buttons |
+| `--ink-secondary` | `#62635F` | Metadata, supporting descriptions |
+| `--ink-tertiary` | `#90918B` | Labels and inactive icons |
+| `--border` | `#DFDED8` | Hairlines, dividers, field borders |
+| `--border-strong` | `#C5C4BD` | Focus-adjacent neutral borders |
+| `--issue` | `#C9473D` | Potential damage, evidence markers |
+| `--issue-bg` | `#FBEDEB` | Unreviewed finding backgrounds |
+| `--confirmed` | `#4C735B` | Confirmed pre-existing evidence |
+| `--confirmed-bg` | `#EAF1EB` | Confirmed evidence backgrounds |
+| `--warning` | `#946B28` | Uncertainty, limited visibility |
+| `--warning-bg` | `#F7F1E3` | Uncertainty backgrounds |
+| `--focus` | `#355E87` | Accessible focus outlines |
+
+Use semantic colors sparingly. Normal navigation, buttons, and data should generally remain neutral.
+
+### Typography
+
+- **Editorial/display:** `DM Serif Display` or a comparable refined serif for hero headlines and high-level screen titles; fall back to Georgia.
+- **Interface/body:** `Inter` (or system sans-serif) for dense UI, controls, captions, tables, and metadata.
+- **Monospace:** `IBM Plex Mono` or system monospace for timestamps, hashes, and file metadata.
+- **Display headline:** 56–72px desktop; 36–44px mobile, normal weight, tight leading.
+- **Page title:** 32–40px desktop; 27–32px mobile.
+- **Section title:** 19–24px.
+- **Body:** 14–16px with comfortable line height (1.45–1.6).
+- **Metadata:** 12–13px, readable contrast.
+- Do not use all-caps for long passages. Reserve uppercase for wordmark, kicker labels, and short document headings.
+
+### Geometry, rhythm, and depth
+
+- **Spacing scale:** 4, 8, 12, 16, 20, 24, 32, 40, 48, 64, 80px.
+- **Desktop page gutters:** 32–48px; **mobile:** 16–20px.
+- **Main panel radius:** 12px; **controls:** 8px; **small badges:** 6px.
+- **Borders:** 1px neutral hairlines.
+- **Shadows:** Minimal; only for overlays, menus, or layered document previews.
+- **Motion:** 150–220ms ease-out for view changes and disclosures; respect reduced-motion preferences.
+- Never use glowing gradients, glassmorphism, emoji navigation, floating AI orbs, giant cards, or decorative charts.
