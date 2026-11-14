@@ -14,7 +14,7 @@ import {
   parseClaimInput,
   validateAndNormalizeComparisons,
   validateAndNormalizeObservations,
-} from './evidenceLogic';
+} from './evidenceLogic.ts';
 import type { ApartmentRecord, Observation } from '../types/baseline';
 
 test('formatTimestamp formats seconds cleanly as MM:SS and optional tenths', () => {

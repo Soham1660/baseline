@@ -76,8 +76,12 @@ export function exportApartmentEvidencePdf(apartment: ApartmentRecord): void {
     `Lease: ${apartment.leaseStart || 'N/A'} to ${apartment.leaseEnd || 'N/A'}`,
     `Deposit: ${formatCurrencyUsd(apartment.securityDepositUsd)}`,
   ].filter(Boolean);
-  doc.text(metaParts.join('  ·  '), margin, y);
-  y += 14;
+  // Wrap long metadata so landlord/lease/deposit details never run past the page edge.
+  const metaLines = doc.splitTextToSize(metaParts.join('  ·  '), maxWidth) as string[];
+  for (const line of metaLines) {
+    doc.text(line, margin, y);
+    y += 14;
+  }
 
   if (apartment.isSample) {
     doc.setFont('helvetica', 'bold');

@@ -1,0 +1,12 @@
+# Large/generated media: host videos on YouTube/Drive, not in git
+videos/
+recordings/
+remotion/public/clips/
+remotion/public/stills/
+remotion/public/audio/
+remotion/public/founder/*
+!remotion/public/founder/.gitkeep
+remotion/out/
+node_modules/
+scripts/node_modules/
+remotion/node_modules/
